@@ -6,15 +6,15 @@ import urllib
 import random
 import json
 
-appid = '20200409000414647'
-secretKey = 'PwWp82YEZKiCflazFZPh'
+appid = '' #api
+secretKey = '' #key
 
 httpClient = None
 myurl = '/api/trans/vip/fieldtranslate'
 
 fromLang = 'zh'
 toLang = 'en'
-q = "耗尽层"
+q = "" #contect
 salt = random.randint(32768, 65536)
 domain = 'electronics'
 sign = appid + q + str(salt) + domain + secretKey
