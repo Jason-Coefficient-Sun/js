@@ -14,7 +14,7 @@ myurl = '/api/trans/vip/fieldtranslate'
 
 fromLang = 'zh'
 toLang = 'en'
-q = "" #contect
+q = input("输入：") #contect
 salt = random.randint(32768, 65536)
 domain = 'electronics'
 sign = appid + q + str(salt) + domain + secretKey
